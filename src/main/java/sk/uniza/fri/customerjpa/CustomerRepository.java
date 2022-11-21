@@ -1,6 +1,7 @@
 package sk.uniza.fri.customerjpa;
 
 import org.springframework.data.repository.CrudRepository;
+import sk.uniza.fri.customerjpa.Customer;
 
 import java.util.List;
 

@@ -21,7 +21,7 @@ class LoadDatabase {
 
             log.info("Preloading... " +
                     repository.save(
-                            new Customer("Peter","Peteraj",Gender.MALE,
+                            new Customer("Peter","Peteraj", Gender.MALE,
                                     LocalDate.of(2000, 11, 8), prievidza)
                     )
             );
