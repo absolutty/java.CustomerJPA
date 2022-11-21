@@ -1,4 +1,4 @@
-package sk.uniza.fri.customerjpa;
+package sk.uniza.fri.customerjpa.customer;
 
 import javax.persistence.*;
 import java.time.LocalDate;

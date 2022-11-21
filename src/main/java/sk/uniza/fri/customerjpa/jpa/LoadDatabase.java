@@ -1,10 +1,13 @@
-package sk.uniza.fri.customerjpa;
+package sk.uniza.fri.customerjpa.jpa;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import sk.uniza.fri.customerjpa.customer.Customer;
+import sk.uniza.fri.customerjpa.customer.Gender;
+import sk.uniza.fri.customerjpa.customer.PlaceOfResidence;
 
 import java.time.LocalDate;
 
@@ -21,7 +24,7 @@ class LoadDatabase {
 
             log.info("Preloading... " +
                     repository.save(
-                            new Customer("Peter","Peteraj",Gender.MALE,
+                            new Customer("Peter","Peteraj", Gender.MALE,
                                     LocalDate.of(2000, 11, 8), prievidza)
                     )
             );
